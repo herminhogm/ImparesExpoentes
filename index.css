@@ -1,0 +1,52 @@
+body{
+    background-color: rgb(147, 151, 151);
+}
+button{
+    display: block; /* Faz com que o input e o button ocupem toda a largura disponível */
+    width: 100%; /* Define a largura em porcentagem */
+    max-width: 300px; /* Define uma largura máxima */
+    font-size: 2em; /* Define o tamanho da fonte em "em" */
+    padding: 10px; /* Adiciona um espaçamento interno para melhorar a usabilidade em dispositivos móveis */
+    margin-bottom: 20px; /* Adiciona um espaçamento entre os elementos */
+
+    border-radius: 5%;
+    color: brown;
+    background-color: black;
+    
+    
+}
+.container {
+    max-width: 800px; /* Define uma largura máxima para o container */
+    margin: 0 auto; /* Centraliza o container horizontalmente */
+    padding: 0 20px; /* Adiciona um espaçamento interno para evitar que os elementos fiquem grudados nas bordas do container */
+}
+
+label{
+    display: block; /* Faz com que o label ocupe toda a largura disponível */
+    font-size: 2em; /* Define o tamanho da fonte em "em" */
+    width: 100%; /* Define a largura em porcentagem */
+    margin-bottom: 10px; /* Adiciona um espaçamento entre os labels */
+    max-width: 300px;
+
+    border-radius: 5%;
+    color: brown;
+    background-color: black;
+   
+    
+}
+
+p{
+    font-size: 25px;
+}
+
+h1{
+    text-align: center;
+}
+input {
+    border-color: red;
+    background-color: rgb(161, 149, 149);
+  }
+  
+p{
+color: rgb(255, 4, 4);
+}

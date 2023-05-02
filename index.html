@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="stylesheet" href="index.css">
+
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Numero Ímpares e Exponenciação</title>
+</head>
+<body>
+    <h1>Calculadora de número ímpares, que somados geram um numero n^p</h1>
+    <div class="container">
+<label for="base">Digite a base:</label>
+
+
+<input type="number" id="base" name="base">
+
+ 
+<label for="expoente">Digite o expoente:</label>
+<input type="number" id="expoente" name="expoente">
+
+ 
+<button onclick="calcularSoma()">Calcular</button>
+
+
+
+</div>   
+<p id="resultado"></p>
+<p id="resultado2"></p>
+<script>
+    function calcularSoma() {
+      // obter os valores dos campos de entrada
+      var base = Number(document.getElementById("base").value);
+      var expoente = Number(document.getElementById("expoente").value);
+  
+      // calcular a soma dos valores
+      var final = base**expoente;
+      var condicao = expoente-1;
+      var aux = (-base)+1;
+      var aux2 = base-1;
+      var numeroI = base**(expoente-1);
+      var numerosString = "";
+      for(var i = 1; i<=base;i++){
+          if(aux <= aux2){
+              numeroI += aux;
+              numerosString += numeroI;
+              document.getElementById("resultado");
+              aux+=2;
+              var numeroI = base**(expoente-1);
+              if(aux <= aux2){
+                numerosString += ", ";
+              }
+          }
+          document.getElementById("resultado2").textContent = final;
+      }
+      resultado.textContent = numerosString;
+
+    }
+  </script>
+    
+</body>
+</html>
